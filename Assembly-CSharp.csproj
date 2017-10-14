@@ -50,7 +50,13 @@
      <Compile Include="Assets\Code\Cloud_1Movement.cs" />
      <Compile Include="Assets\Code\Cloud_2Movement.cs" />
      <Compile Include="Assets\Code\Cloud_3Movement.cs" />
+     <Compile Include="Assets\Code\Menu.cs" />
+     <Compile Include="Assets\Code\NextLevel.cs" />
+     <Compile Include="Assets\Code\Pause.cs" />
+     <Compile Include="Assets\Code\PauseButtons.cs" />
      <Compile Include="Assets\Code\Spawner.cs" />
+     <Compile Include="Assets\Code\enemy.cs" />
+     <Compile Include="Assets\Code\enemyCount.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -31,6 +31,6 @@ public class Spawner : MonoBehaviour
 		ClonedObjects [1] = Instantiate (GameObjects [1], SpawnArea [1].transform.position, Quaternion.Euler (0, 0, 0)) as GameObject;
 		ClonedObjects [2] = Instantiate (GameObjects [2], SpawnArea [2].transform.position, Quaternion.Euler (0, 0, 0)) as GameObject;
         
-
+		Invoke ("spawner", 9);
 	}
 }
