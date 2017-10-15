@@ -1,0 +1,16 @@
+HOW TO PLAY:
+Player is given three balls
+Kill all enemies
+
+-Main Menu
+ -Press start to play game
+
+-Level 1
+ -Drag ball to shoot towards the enemies to kill them
+ -If player fails, auto retry
+ -If player wins, option to go to main menu or next level
+
+- Level 2
+ -Drag ball to shoot towards the enemies to kill them
+ -If player fails, auto retry
+ -If player wins, YOU WIN or go to main menu 

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Code\Ball.cs" />
+     <Compile Include="Assets\Code\Ball_level_2.cs" />
      <Compile Include="Assets\Code\Cloud_1Movement.cs" />
      <Compile Include="Assets\Code\Cloud_2Movement.cs" />
      <Compile Include="Assets\Code\Cloud_3Movement.cs" />

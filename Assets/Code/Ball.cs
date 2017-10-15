@@ -10,13 +10,20 @@ public class Ball : MonoBehaviour
 	public float releaseTime = .1f;
 	public GameObject nextBall;
 	public GameObject player;
+	public GameObject slingShot;
 
+	Vector3 Mp;
 
 	void Update ()
 	{   
+		Mp = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+
 		if (held) {
-			rb.position = Camera.main.ScreenToWorldPoint (Input.mousePosition); 
-			//tranforms pos of screns space to world space using mouse position
+			float x = Mathf.Clamp (Mp.x, slingShot.transform.position.x - 3, slingShot.transform.position.x + 3);
+			float y = Mathf.Clamp (Mp.y, slingShot.transform.position.y - 3, slingShot.transform.position.y + 3);
+			float z = Mathf.Clamp (Mp.z, slingShot.transform.position.z - 3, slingShot.transform.position.z + 3);
+
+			rb.position = new Vector3(x, y, z); 
 
 		}
 	}
@@ -41,12 +48,12 @@ public class Ball : MonoBehaviour
 	
 		GetComponent<SpringJoint2D> ().enabled = false;
 		this.enabled = false;
-		yield return new WaitForSeconds (2f);
-		Destroy (player, 4f);
+		yield return new WaitForSeconds (4f);
+		Destroy (player, 6f);
 		if (nextBall != null) {
 			nextBall.SetActive (true); 
-		} else if (nextBall != null && enemy != 0) {
-			SceneManager.LoadScene (0);
+		} else if (enemy != 0) {
+			SceneManager.LoadScene (1);
 		}
 
 	}
